@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
-    <title>Accueil - AMP POULE</title>
+    <title>Accueil - Tête d'ampoule</title>
 </head>
 <body>
 
@@ -23,7 +23,7 @@
 
             <h2>Formulaire de gestion des ampoules</h2>
             <br>
-            <form action="test.php" method="Post">
+            <form action="edit.php" method="Post">
 
                 <label>Date de l'intervention :</label>
                 <input type="date" name="date">
@@ -47,7 +47,8 @@
 
 <footer>
 
-            <a href="historique.html"><h2>Voir l'historique du changement</h2></a>
+            <a href="historique.php"><h2>Voir l'historique des changements</h2></a>
+            <a href="db.php"><h2>Voir la base de données</h2></a>
 </footer>
 
 </body>
