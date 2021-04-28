@@ -14,7 +14,8 @@ catch (Exception $e)     // Si il y a une erreur
 
   ?> 
 
-
+<?php
+var_dump($_POST['date']);
 
 
 

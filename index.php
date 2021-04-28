@@ -29,10 +29,10 @@
                 <input type="date" name="date">
             <br><br>
                 <label>Etage du changement :</label>
-                <input type="number" name="etage">
+                <input type="number" name="etage" >
             <br><br>
                 <label>Position de l'ampoule :</label>
-                <input form="fond, gauche, droite"type="text" name="position">
+                <input type="text" name="position">
             <br><br>
                 <label>Prix de l'ampoule (€) :</label>
                 <input type="number" name="prix">

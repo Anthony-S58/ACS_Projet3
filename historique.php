@@ -29,7 +29,6 @@
 
     <table>
         <tr>
-            <th>ID</th>
             <th>Date_changement</th>
             <th>Etage</th>
             <th>Position_ampoule</th>
