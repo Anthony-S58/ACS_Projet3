@@ -1,0 +1,42 @@
+html {
+    background: #141d44;
+    
+}
+
+body {
+    
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    color:white;
+    flex-direction: column;
+}
+
+.titre {
+font-size: 2.5em;;
+
+}
+
+.formulaire {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+input {
+    color: black;
+}
+
+input:invalid {
+    border: 2px dashed red;
+  }
+  
+  input:valid {
+    border: 1px solid black;
+  }
+
+  a {
+
+    color: white;
+  }
