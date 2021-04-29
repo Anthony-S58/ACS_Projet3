@@ -79,7 +79,7 @@
 <footer>
 
             <a href="historique.php"><h2>Voir l'historique des changements</h2></a>
-            <a href="db.php"><h2>Voir la base de données</h2></a>
+            <!-- <a href="db.php"><h2>Voir la base de données</h2></a> -->
 </footer>
 
 </body>

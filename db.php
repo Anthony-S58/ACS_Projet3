@@ -36,30 +36,33 @@ $intlDateFormatter = new IntlDateFormatter('fr_FR', IntlDateFormatter::SHORT, In
 
 // on parcours le resultat qu'on affiche à l'écran via echo pour parcourir toutes les lignes on fait une boucle
 
+$reponse=$bdd->query("SELECT * FROM amp");
+while ($data = $reponse->fetch()) 
 
-foreach( $datas as $data){
+{
+
+?>
     
-    echo'<tr>';
+    <?php echo'<tr>'; ?> &nbsp;
 
-        echo'<td>'. $data['ID']. '</td>';
-        echo'<td>'. $intlDateFormatter->format(strtotime($data['Date_changement'])). '</td>';
-        echo'<td>'. $data['Etage']. '</td>';
-        echo'<td>'. $data['Position_ampoule']. '</td>';
-        echo'<td>'. $data['Prix_ampoule']. '</td>';  
-        echo '<td><a href="edit.php?edit=1&id='. $data['id']. '">Modifier</a> <a href="delete.php?id='. $data['id'].'">Supprimer<a><td>';
-
-    echo '</tr>';
-}
-
-
-// Afin d'éviter de laisser un tableau vide, on va créer une condition ou afficher une phrase pour indquer qu'il fonctionne bien mais n'a rien à afficher
-
-
-if(count($datas) === 0){
-    echo'<p> aucune entrée </p>';
+    <?php echo'<td>'. $data['ID']. '</td>'; ?> &nbsp;
+    <?php echo'<td>'. $intlDateFormatter->format(strtotime($data['Date_changement'])). '</td>'; ?> &nbsp;
+       <?php echo'<td>'. $data['Etage']. '</td>'; ?> &nbsp;
+       <?php  echo'<td>'. $data['Position_ampoule']. '</td>'; ?> &nbsp;
+       <?php  echo'<td>'. $data['Prix_ampoule']. '</td>';  ?> <br>
+       
+        <?php  echo '</tr>';
 }
 
 ?>
+
+
+
+
+<!-- // Afin d'éviter de laisser un tableau vide, on va créer une condition ou afficher une phrase pour indquer qu'il fonctionne bien mais n'a rien à afficher -->
+
+
+
 
 
 

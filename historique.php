@@ -36,16 +36,21 @@
             <th>Date_changement</th>
             <th>Etage</th>
             <th>Position_ampoule</th>
-            <th>Prix_ampoule</th>
+            <th>Prix_ampoule(€)</th>
             <th>Modifier/Supprimer</th>
+        </tr>
+
+        <tr>
+            <?php
+                require_once('db.php');  
+            ?> 
+
         </tr>
         
 
     </table>
 
-    <?php
-        require_once('db.php');  
-        ?>
+   
     
 </body>
 </html>

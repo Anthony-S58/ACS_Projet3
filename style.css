@@ -36,9 +36,34 @@ input:invalid {
     border: 1px solid black;
   }
 
-  
+  h2 {
+    font-size:2em;
+  }
 
   a {
 
     color: white;
   }
+
+  
+
+  th {
+
+    border: 1px solid grey;
+    
+    
+  }
+
+  td {
+
+    border: 1px solid grey;
+    
+  }
+
+
+  table {
+
+    border-collapse: collapse;
+  }
+
+  

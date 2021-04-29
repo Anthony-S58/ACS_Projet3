@@ -1,20 +1,26 @@
-<!-- ce fichier contient les requêtes d'insertion et d'edition. les deux ayant besoin de formulaires similaires et touchant aux mêmes données -->
-
-<!-- Pour obtenir les autorisations vis à vis de la Base de données on commence par lier edit.php à db.php -->
-
-
 <?php
-        require_once('db.php');  
-        ?>
 
-  <!-- Il faut maintenant aller chercher ce qu'il y a dans la bdd pour l'injecter dans le tableau (historique.php). On va stocker temporairement la requête $bdd a qui on a affecté la variable $sql. -->
+try
+    {
+        $bdd = new PDO('mysql:host=localhost;dbname=projetampoule;charset=utf8', 'root', '');     // Je me connecte en PDO à ma base de donnée MySql
+    }
+
+catch (Exception $e)     // Si il y a une erreur
+    {
+            die('Erreur : ' . $e->getMessage());     // Alors ca me retourne un message m'informant la provenance de cette erreur Exemple : Base 'Connexionn' inconnue | Un n en trop à la fin et se n'est plus la bonne base de donnée 
+    }
+
+  ?> 
+   <?php
 
 
+   echo ("<script LANGUAGE='JavaScript'>
+    window.alert('Ajout effectué');
+    window.location.href='index.php';
+    </script>");
 
-    <!-- je donne un nom de variable à chaque champ ce qui va me permettre d'insérer le contenu de mon formulaire dans ma base de données -->
 
-
-
+?>
     <?php
 
 
