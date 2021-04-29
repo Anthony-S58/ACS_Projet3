@@ -23,10 +23,9 @@
     <h1>Historique des changements d'ampoules</h1>
     
 
-   <br><br>
+ 
 
-    <p><a href="index.php"> Ajouter </a></p>
-
+    
    
     <table>
     
@@ -41,14 +40,19 @@
         </tr>
 
         <tr>
-            <?php
-                require_once('db.php');  
-            ?> 
+            
+                <?php
+                 require_once('db.php');  
 
+                ?> 
+           
         </tr>
         
 
     </table>
+
+    <p><a href="index.php"> Ajouter </a></p>
+
 
    
     
