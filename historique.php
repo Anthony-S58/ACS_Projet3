@@ -21,21 +21,31 @@
   <!-- Section -->
 
     <h1>Historique des changements d'ampoules</h1>
-
+    
 
    <br><br>
 
     <p><a href="index.php"> Ajouter </a></p>
 
+   
     <table>
+    
+
         <tr>
+            <th>ID</th>
             <th>Date_changement</th>
             <th>Etage</th>
             <th>Position_ampoule</th>
             <th>Prix_ampoule</th>
             <th>Modifier/Supprimer</th>
         </tr>
+        
+
     </table>
+
+    <?php
+        require_once('db.php');  
+        ?>
     
 </body>
 </html>
