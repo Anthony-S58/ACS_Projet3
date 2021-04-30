@@ -14,10 +14,10 @@ catch (Exception $e)     // Si il y a une erreur
    <?php
 
 
-   echo ("<script LANGUAGE='JavaScript'>
-    window.alert('Le lien fonctionne pour la modification');
-    window.location.href='historique.php';
-    </script>");
+//    echo ("<script LANGUAGE='JavaScript'>
+//     window.alert('Le lien fonctionne pour la modification');
+//     window.location.href='historique.php';
+//     </script>");
 
 
     ?>
@@ -25,4 +25,6 @@ catch (Exception $e)     // Si il y a une erreur
 
     <?php
 
-$getid=$_GET['id'];
+$getid=$_GET['ID'];
+
+echo $getid;

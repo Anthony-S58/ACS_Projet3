@@ -15,7 +15,7 @@ catch (Exception $e)     // Si il y a une erreur
 
 
    echo ("<script LANGUAGE='JavaScript'>
-    window.alert('Le lien fonctionne pour la suppression');
+    window.alert('La suppression a bien fonctionné');
     window.location.href='historique.php';
     </script>");
 
@@ -25,4 +25,9 @@ catch (Exception $e)     // Si il y a une erreur
 
     <?php
 
-$getid=$_GET['id'];
+$getid=$_GET['ID'];
+
+
+
+
+$bdd->exec("DELETE from amp WHERE ID='$getid'");
