@@ -15,5 +15,11 @@ catch (Exception $e)     // Si il y a une erreur
 
 
 $getid=$_GET['ID'];
+$date=$_POST['date'];
+$etage=$_POST['etage'];
+$pos=$_POST['position'];
+$prix=$_POST['prix'];
 
-$bdd->exec("UPDATE amp SET(Date_changement, Etage, Position_ampoule, Prix_ampoule) VALUES('$date','$etage','$pos','$prix') WHERE ID='$getid'");
+$bdd->exec("UPDATE amp SET Date_changement='$date', Etage='$etage', Position_ampoule='$pos', Prix_ampoule='$prix' WHERE ID='$getid'");
+
+var_dump($getid);

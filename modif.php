@@ -23,7 +23,7 @@
 
             <h2>Formulaire de gestion des ampoules</h2>
             <br>
-            <form action="validation.php" method="Post">
+            <form action="validation.php method="Post">
 
                 <label>Date de l'intervention :</label>
                 <input type="date" name="date">
