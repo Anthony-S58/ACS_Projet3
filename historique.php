@@ -15,14 +15,14 @@
 
 <div class="titre">
                
-               <h1>Avec  <img src="IMG/ampoule.jpg" alt=""> gérer vos ampoules devient cool</h1>
+               <h1>Avec  <img src="IMG/ampoule2.png" alt=""> gérer vos ampoules devient cool</h1>
       </div>
       <br>
   <!-- Section -->
 
     <h1>Historique des changements d'ampoules</h1>
     
-?>
+
    
     <table>
     

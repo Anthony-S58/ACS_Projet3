@@ -14,7 +14,7 @@
 
     <div class="titre">
                
-             <h1>Avec  <img src="IMG/ampoule.jpg" alt=""> gérer vos ampoules devient cool</h1>
+             <h1>Avec <IMG src="IMG/ampoule2.png">  gérer vos ampoules devient cool</h1>
     </div>
     <br>
 <!-- Section -->
