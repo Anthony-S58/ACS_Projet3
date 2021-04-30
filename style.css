@@ -57,12 +57,21 @@ input:invalid {
     border: 1px solid grey;
     
   }
+  tr:hover{
+    background-color: #06070c85;
+    ;
+    
+  }
+
+  
 
 img:hover {
   
   background-image: url(IMG/ampoule.png);
-}
 
+  animation: ampoule 2s ease 2s infinite normal forwards;
+}
+ 
 
   table {
 

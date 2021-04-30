@@ -13,18 +13,7 @@ catch (Exception $e)     // Si il y a une erreur
   ?> 
    <?php
 
+
 $getid=$_GET['ID'];
 
-   echo ("<script LANGUAGE='JavaScript'>
-    window.alert('Vous êtes sur le point de modifier votre ligne');
-    window.location.href='modif.php?ID=$getid';
-    </script>");
-
-
-    ?>
-
-
-    <?php
-
-
-
+$bdd->exec("UPDATE amp SET(Date_changement, Etage, Position_ampoule, Prix_ampoule) VALUES('$date','$etage','$pos','$prix') WHERE ID='$getid'");
